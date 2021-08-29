@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!-- tailwind added -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="flex mx-48 my-8">
+            <!-- image -->
+         <div class="flex-1">
+                <img class="w-4/5" src="./image/mac.png" alt="" srcset="">
+         </div>
+         <div class="flex-1">
+            <h1 class="text-3xl font-semibold">Customize Your Blue 24-inch iMac with Apple M1 chip</h1> 
+            <p>Apple M1 chip with 8-core CPU with-4 perfomance cores and efficiency cores,7-cores GPU,and 16-cores Neural Engine 8GB unified memory.256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard-US English</p>
+            <h3 class="font-bold text-base my-2 py-2">Memory</h3>
+            <div class="flex">
+                <div id="attached-memory" class="flex-initial text-center border-2 border-gray-600 rounded px-4 py-2 ">
+                   8GB unified memory
+                </div>
+                <div id="extra-memory" class="flex-initial text-center border-2 border-gray-600 rounded px-4 py-2 mx-2">
+                   16GB unified memory
+                </div>
+            </div> 
+            <h3 class="font-bold text-base my-2 py-2">Storage</h3>
+            <div class="flex">
+                <div id="attached-storage" class="flex-initial text-center border-2 border-gray-600 rounded px-4 py-2">
+                256GB SSD storage
+                </div>
+                <div id="extra-storage1" class="flex-initial text-center border-2 border-gray-600 rounded px-4 py-2 mx-2">
+                512GB SSD storage
+                </div>
+                <div id="extra-storage2" class="flex-initial text-center border-2 border-gray-600 rounded  py-2">
+                1TB SSD storage
+                </div>
+            </div>
+            <h3 class="font-bold text-base my-2 py-2">Choose your delivery option</h3>
+            <div class="flex">
+            <div id="free-delivery" class="flex-initial text-center border-2 border-gray-600 rounded px-4 py-2">
+            Friday,Aug 25 FREE Prime Delivery
+            </div>
+            <div id="delivery-charge" class="flex-initial text-center border-2 border-gray-600 rounded py-2 mx-2">
+            Friday,Aug 21 Delivery charge $20
+            </div>
+            </div>
+            <!-- table item -->
+            <table class="font-bold my-16">
+            <tr class="border-b border-gray-300">
+            <td class="py-2">Best Price</td>
+            <td class="py-2 px-10">$1299</td>
+            </tr>
+            <tr class="border-b border-gray-300">
+            <td class="py-2">Extra Memory Cost</td>
+            <td class="py-2 px-10">$<span id="memory-cost">0</span></td>
+            </tr>
+            <tr class="border-b border-gray-300">
+            <td class="py-2">Extra Storage Cost</td>
+            <td class="py-2 px-10">$<span  id="storage-cost">0</span></td>
+            </tr>
+            <tr class="border-b-2 border-gray-700">
+            <td class="py-2">Delivery Cost</td>
+            <td class="py-2 px-10">$<span id="delivery-cost">0</span></td>
+            </tr>
+            <tr class="border-b border-gray-300">
+            <td class="py-2">Total Price</td>
+            <td class="px-4 py-2">$<span id="total-price">1299</span></td>
+            </tr>
+            </table>
+            <!-- promo code -->
+            <h3 class="text-base font-medium">Add Promo Code</h3>
+            <input id="user-box" class="py-2 border border-gray-300 rounded border-2 hover:border-gray-600" type="text"><button id="apply-button" class="bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded">Apply</button>
+         </div>
+        </section>
+        <hr class="my-2 w-3/4 mx-auto">
+        <h1 class="text-center text-3xl font-semibold mb-8">Total: $<span id="total">1299</span></h1>
+    </main>
+    <!-- main ended -->
+    <footer>
+
+    </footer>
+    <!-- footer ended -->
+ <script src="script.js"></script>   
+</body>
+</html>
